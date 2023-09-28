@@ -4,4 +4,7 @@
 # the repo. Unless a later match takes precedence,
 # @global-owner1 and @global-owner2 will be requested for
 # review when someone opens a pull request.
-*       @Drosselmeyer @gpineda1608 @GVaquero22 @
+*       @Drosselmeyer @gpineda1608 @GVaquero22 @Shadowsv503
+
+#Can review documents
+*.docx  @Drosselmeyer @gpineda1608 @GVaquero22 @Shadowsv503
