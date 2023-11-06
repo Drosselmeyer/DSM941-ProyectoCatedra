@@ -46,36 +46,3 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@Composable
-fun SplashScreen(navController: NavHostController) {
-    Box(
-        modifier = Modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center,
-    ) {
-        Column(
-            verticalArrangement = Arrangement.Center,
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Image(
-                painter = painterResource(id = R.drawable.logo),
-                contentDescription = "Logo",
-                modifier = Modifier
-                    .offset(x = (-46).dp, y = (-20).dp)
-                    .requiredWidth(width = 443.dp)
-                    .requiredHeight(height = 840.dp)
-                    .rotate(degrees = 0.25f)
-            )
-            Text(
-                text = "Veterinaria Santa Barbara",
-                color = Color.White,
-                fontSize = 36.sp,
-                fontWeight = FontWeight.Bold
-            )
-        }
-        Box(
-            modifier = Modifier
-                .fillMaxSize()
-                .background(Color.White)
-        )
-    }
-}
