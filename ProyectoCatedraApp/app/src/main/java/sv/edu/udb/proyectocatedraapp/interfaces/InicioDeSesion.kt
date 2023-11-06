@@ -123,7 +123,6 @@ fun InicioDeSesion(modifier: Modifier = Modifier, navController: NavHostControll
                 shape = RoundedCornerShape(4.dp)
             )
     ) {
-        // You can customize the button label or icon here
         Text(text = "Registrate", color = Color(0xFFBE7938) )
     }
 }

@@ -27,7 +27,6 @@ import sv.edu.udb.proyectocatedraasb.R
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import sv.edu.udb.proyectocatedraasb.Menu
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,7 +39,7 @@ class MainActivity : ComponentActivity() {
                     SplashScreen(navController)
                 }
                 composable("main") {
-                    Menu()
+                    Menu(Modifier,navController)
                 }
             }
         }
@@ -61,14 +60,13 @@ fun SplashScreen(navController: NavHostController) {
                 painter = painterResource(id = R.drawable.logo),
                 contentDescription = "Logo",
                 modifier = Modifier
-                    .align(alignment = Alignment.Center)
                     .offset(x = (-46).dp, y = (-20).dp)
                     .requiredWidth(width = 443.dp)
                     .requiredHeight(height = 840.dp)
                     .rotate(degrees = 0.25f)
             )
             Text(
-                text = "My App",
+                text = "Veterinaria Santa Barbara",
                 color = Color.White,
                 fontSize = 36.sp,
                 fontWeight = FontWeight.Bold

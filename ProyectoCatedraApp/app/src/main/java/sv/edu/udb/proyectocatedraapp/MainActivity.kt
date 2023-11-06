@@ -19,8 +19,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ProyectoCatedraAppTheme {
-
-            }Theme {
                 // Create a NavController
                 val navController = rememberNavController()
 

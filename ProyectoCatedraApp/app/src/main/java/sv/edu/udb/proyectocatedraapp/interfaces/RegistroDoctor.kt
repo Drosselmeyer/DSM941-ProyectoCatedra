@@ -4,6 +4,8 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.*
+import androidx.compose.foundation.text.BasicTextField
+import androidx.compose.material3.Button
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -12,11 +14,24 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.*
 import androidx.compose.material3.Text
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.input.TextFieldValue
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.rememberNavController
 import sv.edu.udb.proyectocatedraasb.R
 @Composable
-fun RegistroDoctor(modifier: Modifier = Modifier) {
+fun RegistroDoctor(modifier: Modifier = Modifier, navController: NavHostController) {
+    var nombre by remember { mutableStateOf(TextFieldValue()) }
+    var correo by remember { mutableStateOf(TextFieldValue()) }
+    var dui by remember { mutableStateOf(TextFieldValue()) }
+    var telefono by remember { mutableStateOf(TextFieldValue()) }
+    var genero by remember { mutableStateOf(TextFieldValue()) }
+
     Box(
         modifier = modifier
             .requiredWidth(width = 360.dp)
@@ -26,8 +41,8 @@ fun RegistroDoctor(modifier: Modifier = Modifier) {
             .background(color = Color.White)
     ) {
         Image(
-            painter = painterResource(id = R.drawable.diseosinttulo61),
-            contentDescription = "Diseo sin ttulo (6) 1",
+            painter = painterResource(id = R.drawable.logo),
+            contentDescription = "Logo",
             modifier = Modifier
                 .align(alignment = Alignment.TopStart)
                 .offset(x = (-46).dp,
@@ -35,195 +50,6 @@ fun RegistroDoctor(modifier: Modifier = Modifier) {
                 .requiredWidth(width = 443.dp)
                 .requiredHeight(height = 840.dp)
                 .rotate(degrees = 0.25f))
-        Image(
-            painter = painterResource(id = R.drawable.rectangle1),
-            contentDescription = "Rectangle 1",
-            modifier = Modifier
-                .align(alignment = Alignment.TopStart)
-                .offset(x = 41.dp,
-                    y = 63.dp)
-                .requiredWidth(width = 297.dp)
-                .requiredHeight(height = 212.dp)
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Inicia Sesión",
-            color = Color(0xff49200c),
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Ingrese Usuario",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Ingrese Contraseña",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Registrase",
-            color = Color(0xff49200c),
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "ó",
-            color = Color(0xff49200c),
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.diseosinttulo62),
-            contentDescription = "Diseo sin ttulo (6) 2",
-            modifier = Modifier
-                .align(alignment = Alignment.TopStart)
-                .offset(x = (-46).dp,
-                    y = (-20).dp)
-                .requiredWidth(width = 443.dp)
-                .requiredHeight(height = 840.dp)
-                .rotate(degrees = 0.25f))
-        Image(
-            painter = painterResource(id = R.drawable.rectangle2),
-            contentDescription = "Rectangle 2",
-            modifier = Modifier
-                .align(alignment = Alignment.TopStart)
-                .offset(x = 79.dp,
-                    y = 54.dp)
-                .requiredWidth(width = 206.dp)
-                .requiredHeight(height = 157.dp)
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Nombre ",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Email ",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Genero",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "DUI",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Telefono ",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Registrar",
-            color = Color(0xff49200c),
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
         Text(
             text = "Registro de Veterinario/a ",
             color = Color(0xff49200c),
@@ -233,11 +59,130 @@ fun RegistroDoctor(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxSize()
                 .rotate(degrees = 0.49f))
+        BasicTextField(
+            value = nombre,
+            onValueChange = { newText ->
+                nombre = newText
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(35.dp)
+                .width(174.dp)
+                .background(
+                    color = Color(0xFFF7BF6C),
+                    shape = RoundedCornerShape(4.dp)
+                )
+        ){
+            if (nombre.text.isEmpty()) {
+                Text(
+                    text = "Nombre",
+                    color = Color(0xFFBE7938)
+                )
+            }
+        }
+        BasicTextField(
+            value = correo,
+            onValueChange = { newText ->
+                correo = newText
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(35.dp)
+                .width(174.dp)
+                .background(
+                    color = Color(0xFFF7BF6C),
+                    shape = RoundedCornerShape(4.dp)
+                )
+        ){
+            if (correo.text.isEmpty()) {
+                Text(
+                    text = "Email",
+                    color = Color(0xFFBE7938)
+                )
+            }
+        }
+        BasicTextField(
+            value = dui,
+            onValueChange = { newText ->
+                dui = newText
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(35.dp)
+                .width(174.dp)
+                .background(
+                    color = Color(0xFFF7BF6C),
+                    shape = RoundedCornerShape(4.dp)
+                )
+        ){
+            if (dui.text.isEmpty()) {
+                Text(
+                    text = "DUI",
+                    color = Color(0xFFBE7938)
+                )
+            }
+        }
+        BasicTextField(
+            value = telefono,
+            onValueChange = { newText ->
+                telefono = newText
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(35.dp)
+                .width(174.dp)
+                .background(
+                    color = Color(0xFFF7BF6C),
+                    shape = RoundedCornerShape(4.dp)
+                )
+        ){
+            if (telefono.text.isEmpty()) {
+                Text(
+                    text = "Telefono",
+                    color = Color(0xFFBE7938)
+                )
+            }
+        }
+        BasicTextField(
+            value = genero,
+            onValueChange = { newText ->
+                genero = newText
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(35.dp)
+                .width(174.dp)
+                .background(
+                    color = Color(0xFFF7BF6C),
+                    shape = RoundedCornerShape(4.dp)
+                )
+        ){
+            if (genero.text.isEmpty()) {
+                Text(
+                    text = "Genero",
+                    color = Color(0xFFBE7938)
+                )
+            }
+        }
+        Button(
+            onClick = { navController.navigate("Menu") },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(35.dp)
+                .width(174.dp)
+                .background(
+                    color = Color(0xFFF7BF6C),
+                    shape = RoundedCornerShape(4.dp)
+                )
+        ) {
+            Text(text = "Registrar", color = Color(0xFFBE7938) )
+        }
     }
 }
 
 @Preview(widthDp = 360, heightDp = 800)
 @Composable
 private fun RegistroDoctorPreview() {
-    RegistroDoctor(Modifier)
+    val navController = rememberNavController()
+    RegistroDoctor(Modifier,navController)
 }

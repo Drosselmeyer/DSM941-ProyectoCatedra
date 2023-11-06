@@ -27,8 +27,8 @@ fun EliminarYEditarMascota(modifier: Modifier = Modifier) {
             .background(color = Color.White)
     ) {
         Image(
-            painter = painterResource(id = R.drawable.diseosinttulo61),
-            contentDescription = "Diseo sin ttulo (6) 1",
+            painter = painterResource(id = R.drawable.logo),
+            contentDescription = "Logo",
             modifier = Modifier
                 .align(alignment = Alignment.TopStart)
                 .offset(x = (-46).dp,
@@ -36,147 +36,6 @@ fun EliminarYEditarMascota(modifier: Modifier = Modifier) {
                 .requiredWidth(width = 443.dp)
                 .requiredHeight(height = 840.dp)
                 .rotate(degrees = 0.25f))
-        Image(
-            painter = painterResource(id = R.drawable.rectangle1),
-            contentDescription = "Rectangle 1",
-            modifier = Modifier
-                .align(alignment = Alignment.TopStart)
-                .offset(x = 41.dp,
-                    y = 63.dp)
-                .requiredWidth(width = 297.dp)
-                .requiredHeight(height = 212.dp)
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Inicia Sesión",
-            color = Color(0xff49200c),
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Ingrese Usuario",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Ingrese Contraseña",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Registrase",
-            color = Color(0xff49200c),
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "ó",
-            color = Color(0xff49200c),
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.diseosinttulo62),
-            contentDescription = "Diseo sin ttulo (6) 2",
-            modifier = Modifier
-                .align(alignment = Alignment.TopStart)
-                .offset(x = (-46).dp,
-                    y = (-20).dp)
-                .requiredWidth(width = 443.dp)
-                .requiredHeight(height = 840.dp)
-                .rotate(degrees = 0.25f))
-        Image(
-            painter = painterResource(id = R.drawable.rectangle2),
-            contentDescription = "Rectangle 2",
-            modifier = Modifier
-                .align(alignment = Alignment.TopStart)
-                .offset(x = 71.dp,
-                    y = 49.dp)
-                .requiredWidth(width = 221.dp)
-                .requiredHeight(height = 148.dp)
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Image(
-            painter = painterResource(id = R.drawable.vector),
-            contentDescription = "Vector",
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
         Text(
             text = "Editar o Eliminar Mascotas",
             color = Color(0xff49200c),
@@ -186,79 +45,7 @@ fun EliminarYEditarMascota(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxSize()
                 .rotate(degrees = 0.49f))
-        Text(
-            text = "Busqueda por Nombre del Dueño",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 14.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Tipo de Mascosta",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Nombre Mascota",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Telefono del Dueño ",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Raza",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Edad",
-            color = Color(0xffbe7938),
-            style = TextStyle(
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Eliminar",
-            color = Color(0xff49200c),
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-        Text(
-            text = "Editar",
-            color = Color(0xff49200c),
-            style = TextStyle(
-                fontSize = 20.sp,
-                fontWeight = FontWeight.Bold),
-            modifier = Modifier
-                .fillMaxSize()
-                .rotate(degrees = 0.49f))
-    }
+        }
 }
 
 @Preview(widthDp = 360, heightDp = 800)
