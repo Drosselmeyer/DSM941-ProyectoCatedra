@@ -1,14 +1,14 @@
 # DSM941-ProyectoCatedra
 
 #Integrantes
+ 
+Gabriela Maria Pineda Gonzalez PG120866 - @gpineda1608
 
-Gabriela Maria Pineda Gonzalez PG120866
+Gerardo Antonio Cabezas Vaquero CV152055 - @GVaquero22 
 
-Gerardo Antonio Cabezas Vaquero CV152055
+Jonathan Baltazar Escalante Guardado EG161132 - @Drosselmeyer 
 
-Jonathan Baltazar Escalante Guardado EG161132
-
-William Alexis Argueta Rivas - AR160955
+William Alexis Argueta Rivas AR160955 - @Shadow0397
 
 
 #Enlace de Trello
