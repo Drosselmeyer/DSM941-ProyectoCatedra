@@ -20,6 +20,9 @@ https://www.figma.com/file/aJkfVWnrG4mVWiCotqZtOc/Veterinaria-Santa-B%C3%A1rbara
 #Enlace de video explicación fase 2
 https://www.youtube.com/watch?v=3hUO6s-0V_A
 
+#Enlace de video explicación defensa final
+https://www.youtube.com/watch?v=1xunJVexbsU
+
 #Licencias 
 
 /* Licenciado bajo la Licencia Apache, Versión 2.0 (la "Legal Entity");
