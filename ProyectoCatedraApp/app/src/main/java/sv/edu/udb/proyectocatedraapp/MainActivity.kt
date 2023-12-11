@@ -13,6 +13,10 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import sv.edu.udb.proyectocatedraapp.ui.theme.ProyectoCatedraAppTheme
+import sv.edu.udb.proyectocatedraasb.interfaces.Menu
+import sv.edu.udb.proyectocatedraasb.interfaces.RegistroDoctor
+import sv.edu.udb.proyectocatedraasb.interfaces.RegistroMascota
+import sv.edu.udb.proyectocatedraasb.interfaces.RegistroUsuario
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,13 +28,25 @@ class MainActivity : ComponentActivity() {
 
                 NavHost(
                     navController = navController,
-                    startDestination = "login"
+                    startDestination = "menu"
                 ) {
                     composable("login") {
                         InicioDeSesion(navController = navController)
                     }
                     composable("splash") {
                         SplashScreen(navController = navController)
+                    }
+                    composable("registroUsuario") {
+                        RegistroUsuario(navController = navController)
+                    }
+                    composable("registroMascota") {
+                        RegistroMascota(navController = navController)
+                    }
+                    composable("registroDoctor") {
+                        RegistroDoctor(navController = navController)
+                    }
+                    composable("menu") {
+                        Menu(navController = navController)
                     }
                 }
             }

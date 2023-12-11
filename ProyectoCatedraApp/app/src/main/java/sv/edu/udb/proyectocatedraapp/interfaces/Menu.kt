@@ -4,6 +4,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.shape.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -21,40 +22,47 @@ import androidx.navigation.compose.rememberNavController
 import sv.edu.udb.proyectocatedraasb.R
 @Composable
 fun Menu(modifier: Modifier = Modifier, navController: NavHostController) {
-    Box(
-        modifier = modifier
-            .requiredWidth(width = 360.dp)
-            .requiredHeight(height = 800.dp)
-            .clip(shape = RoundedCornerShape(30.dp))
-            .rotate(degrees = 0.25f)
-            .background(color = Color.White)
-    ) {
+    Column(
+        modifier = modifier.fillMaxWidth(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+        /*.requiredWidth(width = 360.dp)
+        .requiredHeight(height = 800.dp)
+        .clip(shape = RoundedCornerShape(30.dp))
+        .rotate(degrees = 0.25f)
+        .background(color = Color.White)*/
+    )  {
         Image(
             painter = painterResource(id = R.drawable.logo),
             contentDescription = "Logo",
             modifier = Modifier
-                .align(alignment = Alignment.TopStart)
-                .offset(x = (-46).dp,
-                    y = (-20).dp)
-                .requiredWidth(width = 443.dp)
-                .requiredHeight(height = 840.dp)
-                .rotate(degrees = 0.25f))
-        Box(
+                /*.align(alignment = Alignment.CenterHorizontally)*/
+                .offset(x = (0).dp,
+                    y = (0).dp)
+                .requiredWidth(width = 200.dp)
+                .requiredHeight(height = 200.dp)
+                .rotate(degrees = 0.25f)
+                .size(100.dp,50.dp)
+                .padding(all = 8.dp),
+            contentScale = ContentScale.Inside
+        )
+        Row(
             modifier = Modifier
-                .width(146.dp)
-                .height(163.dp)
+                .fillMaxWidth()
+                .height(140.dp)
                 .background(Color(0xFFF7BF6C))
                 .clickable { navController.navigate("RegistroMascota") },
         ) {
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.weight(1f),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.pacientes),
                     contentDescription = null,
-                    modifier = Modifier.size(80.dp),
+                    modifier = Modifier.size(80.dp)
+                                .padding(all = 8.dp),
                     contentScale = ContentScale.Fit
                 )
                 Spacer(modifier = Modifier.height(8.dp))
@@ -63,23 +71,16 @@ fun Menu(modifier: Modifier = Modifier, navController: NavHostController) {
                     color = Color(0xFF49200C),
                 )
             }
-        }
-        Box(
-            modifier = Modifier
-                .width(146.dp)
-                .height(163.dp)
-                .background(Color(0xFFF7BF6C))
-                .clickable { navController.navigate("Veterinario") },
-        ) {
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.weight(1f),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.veterinario),
                     contentDescription = null,
-                    modifier = Modifier.size(80.dp),
+                    modifier = Modifier.size(80.dp)
+                        .padding(all = 8.dp),
                     contentScale = ContentScale.Fit
                 )
                 Spacer(modifier = Modifier.height(8.dp))
@@ -89,22 +90,23 @@ fun Menu(modifier: Modifier = Modifier, navController: NavHostController) {
                 )
             }
         }
-        Box(
+        Row(
             modifier = Modifier
-                .width(146.dp)
-                .height(163.dp)
+                .fillMaxWidth()
+                .height(140.dp)
                 .background(Color(0xFFF7BF6C))
                 .clickable { navController.navigate("RegistroCitas") },
         ) {
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.weight(1f),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.citas),
                     contentDescription = null,
-                    modifier = Modifier.size(80.dp),
+                    modifier = Modifier.size(80.dp)
+                        .padding(all = 8.dp),
                     contentScale = ContentScale.Fit
                 )
                 Spacer(modifier = Modifier.height(8.dp))
@@ -113,23 +115,16 @@ fun Menu(modifier: Modifier = Modifier, navController: NavHostController) {
                     color = Color(0xFF49200C),
                 )
             }
-        }
-        Box(
-            modifier = Modifier
-                .width(146.dp)
-                .height(163.dp)
-                .background(Color(0xFFF7BF6C))
-                .clickable { navController.navigate("HistorialCita") },
-        ) {
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.weight(1f),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.historial),
                     contentDescription = null,
-                    modifier = Modifier.size(80.dp),
+                    modifier = Modifier.size(80.dp)
+                        .padding(all = 8.dp),
                     contentScale = ContentScale.Fit
                 )
                 Spacer(modifier = Modifier.height(8.dp))
@@ -139,22 +134,23 @@ fun Menu(modifier: Modifier = Modifier, navController: NavHostController) {
                 )
             }
         }
-        Box(
-            modifier = Modifier
-                .width(146.dp)
-                .height(163.dp)
+        Row(
+            modifier = Modifier.fillMaxSize()
+                .fillMaxWidth()
+                .height(140.dp)
                 .background(Color(0xFFF7BF6C))
                 .clickable { navController.navigate("Cuenta") },
         ) {
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.weight(1f),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.cuenta),
                     contentDescription = null,
-                    modifier = Modifier.size(80.dp),
+                    modifier = Modifier.size(80.dp)
+                        .padding(all = 8.dp),
                     contentScale = ContentScale.Fit
                 )
                 Spacer(modifier = Modifier.height(8.dp))
@@ -163,23 +159,16 @@ fun Menu(modifier: Modifier = Modifier, navController: NavHostController) {
                     color = Color(0xFF49200C),
                 )
             }
-        }
-        Box(
-            modifier = Modifier
-                .width(146.dp)
-                .height(163.dp)
-                .background(Color(0xFFF7BF6C))
-                .clickable { navController.navigate("Configuracion") },
-        ) {
             Column(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.weight(1f),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.configuracion),
                     contentDescription = null,
-                    modifier = Modifier.size(80.dp),
+                    modifier = Modifier.size(80.dp)
+                        .padding(all = 8.dp),
                     contentScale = ContentScale.Fit
                 )
                 Spacer(modifier = Modifier.height(8.dp))
@@ -189,7 +178,7 @@ fun Menu(modifier: Modifier = Modifier, navController: NavHostController) {
                 )
             }
         }
-    }
+     }
 }
 
 @Preview(widthDp = 360, heightDp = 800)
