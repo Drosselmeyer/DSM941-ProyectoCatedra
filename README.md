@@ -17,6 +17,9 @@ https://trello.com/invite/b/bBBHLIPg/ATTI3238b26660cc77c39eed4308d85f2c37C9AEC7F
 #Enlace de Mockups
 https://www.figma.com/file/aJkfVWnrG4mVWiCotqZtOc/Veterinaria-Santa-B%C3%A1rbara?type=design&node-id=0%3A1&mode=design&t=ZZ8E6EAQaq0itH4u-1
 
+#Enlace de video explicación fase 2
+https://www.youtube.com/watch?v=3hUO6s-0V_A
+
 #Licencias 
 
 /* Licenciado bajo la Licencia Apache, Versión 2.0 (la "Legal Entity");
